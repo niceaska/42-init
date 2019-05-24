@@ -1,0 +1,21 @@
+#!/bin/bash
+if [ -z $1 ]
+then
+	echo "Write username who you want to delete."
+exit 1
+fi
+set -e
+read -p "Remove all files? Y/n " answer
+if [[ "${answer:0:1}" == "y" ]]
+then
+	sudo deluser --remove-all-files $1
+	echo "All files deleted."
+elif [[ "${answer:0:1}" == "n" ]]
+then
+	sudo deluser --remove-home $1
+	echo "Home directory is deleted."
+else
+	echo "Wrong answer. You should choose y or n"
+fi
+echo "Done"
+

@@ -1,0 +1,10 @@
+#!/bin/bash/
+if [ -n "$1" ]
+then
+	dir=$1
+else
+	dir='.'
+fi
+echo "lgigi" > $dir/author
+echo -e "*.out\n*.o\n.DS_Store\n.vscode" > $dir/.gitignore
+echo "Done"

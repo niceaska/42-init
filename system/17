@@ -1,0 +1,3 @@
+#!/bin/bash
+#Because I'm using port forwading
+ssh -p 2222 niceaska@127.0.0.1

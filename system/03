@@ -1,0 +1,2 @@
+This is /etc/hostname. You need delete existing name and replace it with a new name. Then reboot
+/etc/hostname

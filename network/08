@@ -1,0 +1,2 @@
+Look for the dns servers of the hosting. This can be done via whois, but I prefer host command. So that:
+host -t ns slash16.org 

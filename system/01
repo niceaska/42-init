@@ -1,0 +1,4 @@
+If you need only version:
+cat /etc/debian_version
+If you want more output:
+cat /etc/issue
